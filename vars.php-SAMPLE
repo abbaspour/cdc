@@ -1,0 +1,24 @@
+<?php
+
+$AUTH0_DOMAIN = 'amin01.au.auth0.com';
+$CLIENT_ID = '5Gbu9OVKqTjK00NoFqPKAw2oT0S081LE';
+$CLIENT_SECRET = 'XXXXX';
+$MASTER_BASE_URL = 'http://master.com/~amin/cdc/master';
+$REDIRECT_URI = "$MASTER_BASE_URL/cb.php";
+$MASTER_LOGOUT_URL = "$MASTER_BASE_URL/logout.php";
+
+// -- openssl --
+$encryption_iv = '1234567891011121';
+$encryption_key = "YYYYYYY";
+$ciphering = "AES-128-CBC";
+
+$LEEWAY = 10; // in seconds
+
+$APP1_BASE_URL = 'http://app1.com/~amin/cdc/app';
+$APP2_BASE_URL = 'http://app2.com/~amin/cdc/app';
+
+$APP1_CDC_URL = "$APP1_BASE_URL/setcdc.php";
+$APP2_CDC_URL = "$APP2_BASE_URL/setcdc.php";
+
+$APP1_LOGOUT_URL = "$APP1_BASE_URL/logout.php";
+$APP2_LOGOUT_URL = "$APP2_BASE_URL/logout.php";
